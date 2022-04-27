@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "60d62ab6-94eb-4eca-93b9-a215dca880bf": {
+      "ProjectGuid": "60d62ab6-94eb-4eca-93b9-a215dca880bf",
+      "DisplayName": "WebAppLoggingErrorsWithELMAH",
+      "ColorIndex": 0
+    },
+    "e720cc2b-6307-47cb-8519-d283d0618290": {
+      "ProjectGuid": "e720cc2b-6307-47cb-8519-d283d0618290",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
