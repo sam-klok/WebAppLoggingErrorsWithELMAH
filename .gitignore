@@ -2,4 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/packages/elmah.corelibrary.1.2.2/lib/Elmah.dll
+/packages/elmah.1.2.2
+/packages/elmah.corelibrary.1.2.2
+/WebAppLoggingErrorsWithELMAH/bin/
+/WebAppLoggingErrorsWithELMAH/obj/

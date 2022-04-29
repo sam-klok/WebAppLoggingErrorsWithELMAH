@@ -23,6 +23,8 @@ namespace WebAppLoggingErrorsWithELMAH.Controllers
             var ludi = db.Ludi;
             Debug.Write(ludi.Count());
 
+            //throw new Exception("Test exception");
+
             return View(ludi);
         }
 

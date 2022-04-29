@@ -1,9 +1,12 @@
 It's sample .Net Framework 4.7.2 web applicaton with MVC and database access.
-Purpose to show how to work with ELMAH.
+Purpose is to show how to work with Errol logging library ELMAH.
+Also it's a demo of Entity Framework (database first) and MVC. 
 Later I will develop .Core version of it..
 
 To run open page:
 https://localhost:44365/Ludi/Index
+
+To create database, used in this demo, use SQL from https://github.com/sam-klok/BasicSqlJoins
 
 thank you,
 Sam Klok
@@ -22,10 +25,16 @@ https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/getting-st
 2. Logging Error Details with ELMAH (C#)
 https://docs.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-elmah-cs
 
+2.1. Install NuGet Package elmah
+2.2. Run SQL script \SQL\Generate_ELMAH_table_SQLServer.sql  (download it from https://github.com/elmah/Elmah/tree/v1.2-sp2/src/Elmah/SQLServer.sql )
+
+2.3. Use URL for text exception logging:
+https://localhost:44365/elmah.axd/test
+
+2.4. Use URL https://localhost:44365/elmah.axd to see list of logged errors from DB.
 
 
-
-Errors:
+While developing, I discovered errors, which I fixed.
 1.  Message=The ADO.NET provider with invariant name 'System.Data.SqlServerCe.4.0' is either not registered in the machine or application config file, or could not be loaded. See the inner exception for details.
   Source=EntityFramework
 Inner Exception 1:
@@ -42,3 +51,4 @@ Ludi: EntityType: EntitySet 'Ludi' is based on type 'Ludi' that has no keys defi
 
 Fix:
 added [Key] to the model
+
